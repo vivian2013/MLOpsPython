@@ -6,7 +6,7 @@ products:
 - azure
 - azure-machine-learning-service
 - azure-devops
-description: "Code which demonstrates how to set up and operationalize an MLOps flow leveraging Azure Machine Learning and Azure DevOps."
+description: "Code which demonstrates how to set up and operationalize an MLOps flow leveraging Azure Machine Learning and Azure DevOps.."
 ---
 
 # MLOps with Azure ML
