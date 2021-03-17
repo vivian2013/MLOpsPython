@@ -411,6 +411,9 @@ def build_batchscore_pipeline():
             env,
         )
 
+        p_disable = PublishedPipeline.get(ws, id="342e3ab2-6c9f-415a-ba54-d0536f561f66")
+        p_disable.disable()
+        
         published_pipeline = scoring_pipeline.publish(
             name=env.scoring_pipeline_name,
             description="Diabetes Batch Scoring Pipeline",
