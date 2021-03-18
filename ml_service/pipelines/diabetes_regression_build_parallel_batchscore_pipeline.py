@@ -35,7 +35,7 @@ from azureml.core import (
     Datastore,
     RunConfiguration,
 )
-from azureml.pipeline.core import Pipeline, PipelineData, PipelineParameter, PublishedPipeline
+from azureml.pipeline.core import Pipeline, PipelineData, PipelineParameter, PublishedPipeline  # NOQA: E501
 from azureml.core.compute import ComputeTarget
 from azureml.data.datapath import DataPath
 from azureml.pipeline.steps import PythonScriptStep
@@ -411,8 +411,8 @@ def build_batchscore_pipeline():
             env,
         )
 
-        p_disable = PublishedPipeline.get(aml_workspace, id="342e3ab2-6c9f-415a-ba54-d0536f561f66")
-        p_disable.disable()        
+        p_disable = PublishedPipeline.get(aml_workspace, id="342e3ab2-6c9f-415a-ba54-d0536f561f66")  # NOQA: E501
+        p_disable.disable()
         published_pipeline = scoring_pipeline.publish(
             name=env.scoring_pipeline_name,
             description="Diabetes Batch Scoring Pipeline",
