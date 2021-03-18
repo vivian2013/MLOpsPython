@@ -411,7 +411,7 @@ def build_batchscore_pipeline():
             env,
         )
 
-        p_disable = PublishedPipeline.get(aml_workspace, id="342e3ab2-6c9f-415a-ba54-d0536f561f66")  # NOQA: E501
+        p_disable = PublishedPipeline.get(aml_workspace, id="202bb279-f0a2-46ae-9ba1-d19f96b6694e")  # NOQA: E501
         p_disable.disable()
         published_pipeline = scoring_pipeline.publish(
             name=env.scoring_pipeline_name,
